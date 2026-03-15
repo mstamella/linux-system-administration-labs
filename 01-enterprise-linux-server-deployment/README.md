@@ -1,7 +1,7 @@
 # Enterprise Linux Server Deployment
 
 ## Overview
-This lab demonstrates the deployment, configuration, and recovery of a **Red Hat Enterprise Linux 9 server** in a virtualized environment.
+This project demonstrates the deployment, configuration, and recovery of a **Red Hat Enterprise Linux 9 server** in a virtualized environment.
 
 The system is configured to operate without external repositories and supports secure user management, system recovery, and persistent logging.
 
@@ -14,7 +14,7 @@ This project aligns with **RHCSA (EX200)** objectives for system installation, b
 This lab simulates an enterprise Linux server deployment environment.
 
 **Host System**
-- macOS / Windows workstation
+- macOS or Windows workstation
 
 **Virtualization Platform**
 - VirtualBox
@@ -23,9 +23,9 @@ This lab simulates an enterprise Linux server deployment environment.
 - Red Hat Enterprise Linux 9
 
 **Resources**
-- 2 GB RAM
-- 20 GB primary disk
-- additional disk for storage labs
+- 2 GB RAM  
+- 20 GB primary disk  
+- Additional disk used for storage labs
 
 ---
 
@@ -41,7 +41,17 @@ This lab simulates an enterprise Linux server deployment environment.
 
 ---
 
-## Tasks Performed
+## Objectives
+
+- Deploy a Red Hat Enterprise Linux server
+- Configure local software repositories
+- Practice system recovery procedures
+- Configure system logging and boot targets
+- Validate system configuration
+
+---
+
+## Implementation
 
 ### Server Installation
 - Installed **RHEL 9** using default partitioning
@@ -50,7 +60,7 @@ This lab simulates an enterprise Linux server deployment environment.
 
 ### Repository Configuration
 - Mounted installation ISO to `/repo`
-- Configured local repository
+- Configured a local software repository
 - Disabled external repositories
 
 ### System Recovery
@@ -85,15 +95,36 @@ systemctl set-default multi-user.target
 passwd root
 journalctl -xe
 ```
-## Outcome
-
-Successfully deployed and configured an enterprise Linux server with:
-
-- repository management using local and CDN repositories  
-- secure authentication and password recovery procedures  
-- system recovery through emergency boot mode  
-- persistent system logging with journald  
 ---
+
+## Validation
+
+Configuration was verified using:
+
+```bash
+systemctl get-default
+dnf repolist
+journalctl -xe
+```
+
+### Outcome
+• repository management  
+• authentication and recovery  
+• emergency boot recovery  
+• journald logging  
+
 ### Summary
 
-These tasks demonstrate core RHCSA system administration skills used in enterprise Linux environments including system recovery, repository management, and service administration.
+### Outcome
+• repository management  
+• authentication and recovery  
+• emergency boot recovery  
+• journald logging  
+
+### Summary
+
+This project demonstrates core RHCSA system administration skills used in enterprise Linux environments including system recovery, repository management, and service administration.
+
+---
+
+
