@@ -1,4 +1,4 @@
-# Linux System Administration Labs
+# Enterprise Linux System Administration Portfolio
 
 Enterprise Linux administration projects aligned with **Red Hat Certified System Administrator (RHCSA EX200)** objectives.
 
@@ -33,7 +33,7 @@ Deployment and configuration of a Red Hat Enterprise Linux server including syst
 - system recovery
 - journald logging
 
-📁 01-enterprise-linux-server-deployment
+📁 [01-enterprise-linux-server-deployment](01-enterprise-linux-server-deployment)
 
 ---
 
@@ -50,7 +50,7 @@ Enterprise Linux storage configuration using GPT partitioning, Logical Volume Ma
 - filesystem resizing
 - persistent mounts
 
-📁 02-storage-management-lvm-gpt
+📁 [01-enterprise-linux-server-deployment](01-enterprise-linux-server-deployment)
 
 ---
 
