@@ -9,6 +9,26 @@ This project aligns with **RHCSA (EX200)** objectives for system installation, b
 
 ---
 
+## Lab Architecture
+
+This lab simulates an enterprise Linux server deployment environment.
+
+**Host System**
+- macOS / Windows workstation
+
+**Virtualization Platform**
+- VirtualBox
+
+**Guest Operating System**
+- Red Hat Enterprise Linux 9
+
+**Resources**
+- 2 GB RAM
+- 20 GB primary disk
+- additional disk for storage labs
+
+---
+
 ## Lab Environment
 
 | Component | Configuration |
