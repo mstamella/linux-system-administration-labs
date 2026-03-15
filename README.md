@@ -1,6 +1,6 @@
 # Enterprise Linux System Administration Portfolio
 
-Enterprise Linux administration projects aligned with **Red Hat Certified System Administrator (RHCSA EX200)** objectives.
+Hands-on enterprise Linux administration projects aligned with **Red Hat Certified System Administrator (RHCSA EX200)** objectives.
 
 This repository demonstrates hands-on experience administering **Red Hat Enterprise Linux 9** systems including server deployment, storage management, security, containers, and system automation.
 
@@ -50,7 +50,7 @@ Enterprise Linux storage configuration using GPT partitioning, Logical Volume Ma
 - filesystem resizing
 - persistent mounts
 
-📁 [01-enterprise-linux-server-deployment](01-enterprise-linux-server-deployment)
+📁 [02-storage-management-lvm-gpt](02-storage-management-lvm-gpt)
 
 ---
 
@@ -67,7 +67,7 @@ Secure multi-user system configuration including user management, group permissi
 - shared directories
 - sudo access control
 
-📁 03-secure-multi-user-linux-environment
+📁 [03-secure-multi-user-linux-environment](03-secure-multi-user-linux-environment)
 
 ---
 
@@ -83,7 +83,7 @@ Deployment and management of containerized services using the Podman container e
 - container networking
 - container lifecycle management
 
-📁 04-containerized-services-podman
+📁 [04-containerized-services-podman](04-containerized-services-podman)
 
 ---
 
@@ -98,7 +98,7 @@ Automation of administrative tasks using systemd services and systemd timers.
 - Linux task automation
 - service lifecycle management
 
-📁 05-linux-automation-systemd-timers
+📁 [05-linux-automation-systemd-timers](05-linux-automation-systemd-timers)
 
 ---
 
