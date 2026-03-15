@@ -1,6 +1,7 @@
 # Enterprise Linux Server Deployment
 
 ## Overview
+
 This project demonstrates the deployment, configuration, and recovery of a **Red Hat Enterprise Linux 9 server** in a virtualized environment.
 
 The system is configured to operate without external repositories and supports secure user management, system recovery, and persistent logging.
@@ -23,8 +24,8 @@ This lab simulates an enterprise Linux server deployment environment.
 - Red Hat Enterprise Linux 9
 
 **Resources**
-- 2 GB RAM  
-- 20 GB primary disk  
+- 2 GB RAM
+- 20 GB primary disk
 - Additional disk used for storage labs
 
 ---
@@ -54,21 +55,25 @@ This lab simulates an enterprise Linux server deployment environment.
 ## Implementation
 
 ### Server Installation
+
 - Installed **RHEL 9** using default partitioning
 - Configured server installation profile
 - Verified system boot targets and kernel parameters
 
 ### Repository Configuration
+
 - Mounted installation ISO to `/repo`
 - Configured a local software repository
 - Disabled external repositories
 
 ### System Recovery
+
 - Booted into **emergency mode**
 - Reset lost root password
 - Verified system integrity after reboot
 
 ### System Configuration
+
 - Configured system logging using `journald`
 - Installed software from local repositories
 - Registered system using `subscription-manager`
@@ -106,20 +111,17 @@ systemctl get-default
 dnf repolist
 journalctl -xe
 ```
+---
 
 ### Outcome
-• repository management  
-• authentication and recovery  
-• emergency boot recovery  
-• journald logging  
 
-### Summary
+Successfully deployed and configured an enterprise Linux server with:
+• repository management using local CDN repositories
+• secure authentication and password recovery procedures
+• system recovery through emergency boot mode
+• persistent system logging using journald  
 
-### Outcome
-• repository management  
-• authentication and recovery  
-• emergency boot recovery  
-• journald logging  
+---
 
 ### Summary
 
