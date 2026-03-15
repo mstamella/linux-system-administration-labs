@@ -72,7 +72,7 @@ This lab simulates adding new storage to a running Linux server.
 
 - Created **XFS filesystem**
 - Mounted logical volume
-- Configured persistent mount using `/etc/fstab`
+- Configured persistent mount configuration using `/etc/fstab`
 
 ### Storage Expansion
 
@@ -126,10 +126,10 @@ mount
 Successfully configured enterprise Linux storage with:
 
 - GPT partitioning for modern disk management
-- logical volume management using LVM
+- Logical volume management using LVM
 - XFS filesystem creation and mounting
-- online logical volume expansion
-- persistent mount configuration using /etc/fstab
+- Online logical volume expansion
+- Persistent mount configuration using /etc/fstab
 
 ---
 
