@@ -72,7 +72,7 @@ This lab simulates adding new storage to a running Linux server.
 
 - Created **XFS filesystem**
 - Mounted logical volume
-- Configured persistent mount configuration using `/etc/fstab`
+- Persistent mount configuration using `/etc/fstab`
 
 ### Storage Expansion
 
