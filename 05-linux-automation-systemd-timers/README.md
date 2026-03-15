@@ -93,6 +93,8 @@ systemctl status mytask.timer
 
 ## Validation
 
+Configuration was verified by inspecting active timers and confirming file creation in `/tmp`.
+
 ```bash
 systemctl list-timers
 systemctl status mytask.timer
