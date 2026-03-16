@@ -106,11 +106,11 @@ ping google.com
 
 ## Outcome
 
-Succesfully configured and verified Linux network connectivity using NetworkManager with:
+Successfully configured and verified Linux network connectivity using NetworkManager with:
 
 - network interface inspection
 - network configuration using nmcli
-- verification of active network connection
+- verification of active network connections
 - successful connectivity testing
 
 ---
