@@ -1,8 +1,12 @@
-# Enterprise Linux System Administration Portfolio
+# Enterprise Linux System Administration Lab Portfolio
 
-Hands-on enterprise Linux administration projects aligned with **Red Hat Certified System Administrator (RHCSA EX200)** objectives.
+Hands-on **Linux system administration projects** aligned with **Red Hat Certified System Administrator (RHCSA EX200)** objectives.
 
-This repository demonstrates hands-on experience administering **Red Hat Enterprise Linux 9** systems including server deployment, storage management, security, containers, and system automation.
+This repository demonstrates practical experience administering **Red Hat Enterprise Linux 9** systems including server deployment, storage management, user security, containerized services, application management, repository configuration, networking, and system automation.
+
+All projects were performed in a controlled lab environment using enterprise Linux administration tools and documented using real commands and validation steps.
+
+The projects in this repository simulate common enterprise Linux administration tasks performed by system administrators in production environments.
 
 ---
 
@@ -23,7 +27,7 @@ This repository demonstrates hands-on experience administering **Red Hat Enterpr
 
 ## 1. Enterprise Linux Server Deployment
 
-Deployment and configuration of a Red Hat Enterprise Linux server including system recovery and repository configuration.
+Deployment and configuration of a Red Hat Enterprise Linux server including system recovery, boot management, and repository configuration.
 
 **Skills demonstrated**
 
@@ -31,9 +35,9 @@ Deployment and configuration of a Red Hat Enterprise Linux server including syst
 - repository management
 - boot troubleshooting
 - system recovery
-- journald logging
+- system logging using journald
 
-📁 [01-enterprise-linux-server-deployment](01-enterprise-linux-server-deployment)
+📁 01-enterprise-linux-server-deployment
 
 ---
 
@@ -43,31 +47,31 @@ Enterprise Linux storage configuration using GPT partitioning, Logical Volume Ma
 
 **Skills demonstrated**
 
-- GPT partitioning
-- physical volumes
-- volume groups
-- logical volumes
+- GPT disk partitioning
+- physical volume initialization
+- volume group management
+- logical volume creation
 - filesystem resizing
-- persistent mounts
+- persistent mounts using `/etc/fstab`
 
-📁 [02-storage-management-lvm-gpt](02-storage-management-lvm-gpt)
+📁 02-storage-management-lvm-gpt
 
 ---
 
 ## 3. Secure Multi-User Linux Environment
 
-Secure multi-user system configuration including user management, group permissions, ACLs, and controlled privilege escalation.
+Secure multi-user system configuration including user management, group permissions, Access Control Lists (ACLs), and controlled privilege escalation.
 
 **Skills demonstrated**
 
 - user administration
 - group management
-- file permissions
+- file permissions and ownership
 - ACL configuration
-- shared directories
-- sudo access control
+- shared directory access control
+- sudo privilege management
 
-📁 [03-secure-multi-user-linux-environment](03-secure-multi-user-linux-environment)
+📁 03-secure-multi-user-linux-environment
 
 ---
 
@@ -83,26 +87,71 @@ Deployment and management of containerized services using the Podman container e
 - container networking
 - container lifecycle management
 
-📁 [04-containerized-services-podman](04-containerized-services-podman)
+📁 04-containerized-services-podman
 
 ---
 
 ## 5. Linux Automation with systemd Timers
 
-Automation of administrative tasks using systemd services and systemd timers.
+Automation of administrative tasks using systemd service units and systemd timers.
 
 **Skills demonstrated**
 
 - systemd service configuration
 - systemd timer scheduling
-- Linux task automation
+- automated task execution
 - service lifecycle management
 
-📁 [05-linux-automation-systemd-timers](05-linux-automation-systemd-timers)
+📁 05-linux-automation-systemd-timers
 
 ---
 
-# Skills Demonstrated
+## 6. Flatpak Application Management
+
+Application deployment and management using Flatpak package management.
+
+**Skills demonstrated**
+
+- Flatpak installation
+- repository configuration using Flathub
+- secure application deployment
+- Flatpak application lifecycle management
+
+📁 06-flatpak-application-management
+
+---
+
+## 7. RHEL Repository Management
+
+Enterprise Linux repository configuration including local ISO repositories and package installation using DNF.
+
+**Skills demonstrated**
+
+- repository configuration
+- local repository management
+- package installation using DNF
+- repository verification
+
+📁 07-rhel-repository-management
+
+---
+
+## 8. Linux Network Configuration
+
+Network configuration and connectivity verification using NetworkManager and `nmcli`.
+
+**Skills demonstrated**
+
+- network interface management
+- NetworkManager administration
+- network configuration using nmcli
+- connectivity verification
+
+📁 08-linux-network-configuration
+
+---
+
+# Core Skills Demonstrated
 
 - Red Hat Enterprise Linux administration
 - Linux system deployment
@@ -110,6 +159,8 @@ Automation of administrative tasks using systemd services and systemd timers.
 - multi-user security and permissions
 - container management with Podman
 - Linux automation using systemd
+- software and repository management
+- Linux network configuration
 
 ---
 
@@ -117,4 +168,5 @@ Automation of administrative tasks using systemd services and systemd timers.
 
 Tammie Freeman  
 Junior Linux System Administrator  
+Master of Engineering (M.Eng.), Cybersecurity Policy & Compliance  
 CompTIA Linux+ | CompTIA Security+ | RHCSA (In Progress)
