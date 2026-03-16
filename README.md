@@ -37,7 +37,7 @@ Deployment and configuration of a Red Hat Enterprise Linux server including syst
 - system recovery
 - system logging using journald
 
-📁 01-enterprise-linux-server-deployment
+📁 [01-enterprise-linux-server-deployment](https://github.com/mstamella/linux-system-administration-labs/tree/main/01-enterprise-linux-server-deployment)
 
 ---
 
@@ -54,7 +54,7 @@ Enterprise Linux storage configuration using GPT partitioning, Logical Volume Ma
 - filesystem resizing
 - persistent mounts using `/etc/fstab`
 
-📁 02-storage-management-lvm-gpt
+📁 [02-storage-management-lvm-gpt](https://github.com/mstamella/linux-system-administration-labs/tree/main/02-storage-management-lvm-gpt)
 
 ---
 
@@ -71,7 +71,7 @@ Secure multi-user system configuration including user management, group permissi
 - shared directory access control
 - sudo privilege management
 
-📁 03-secure-multi-user-linux-environment
+📁 [03-secure-multi-user-linux-environment](https://github.com/mstamella/linux-system-administration-labs/tree/main/03-secure-multi-user-linux-environment)
 
 ---
 
@@ -87,7 +87,7 @@ Deployment and management of containerized services using the Podman container e
 - container networking
 - container lifecycle management
 
-📁 04-containerized-services-podman
+📁 [04-containerized-services-podman](https://github.com/mstamella/linux-system-administration-labs/tree/main/04-containerized-services-podman)
 
 ---
 
@@ -102,7 +102,7 @@ Automation of administrative tasks using systemd service units and systemd timer
 - automated task execution
 - service lifecycle management
 
-📁 05-linux-automation-systemd-timers
+📁 [05-linux-automation-systemd-timers](https://github.com/mstamella/linux-system-administration-labs/tree/main/05-linux-automation-systemd-timers)
 
 ---
 
@@ -117,7 +117,7 @@ Application deployment and management using Flatpak package management.
 - secure application deployment
 - Flatpak application lifecycle management
 
-📁 06-flatpak-application-management
+📁 [06-flatpak-application-management](https://github.com/mstamella/linux-system-administration-labs/tree/main/06-flatpak-application-management)
 
 ---
 
@@ -132,7 +132,7 @@ Enterprise Linux repository configuration including local ISO repositories and p
 - package installation using DNF
 - repository verification
 
-📁 07-rhel-repository-management
+📁 [07-rhel-repository-management](https://github.com/mstamella/linux-system-administration-labs/tree/main/07-rhel-repository-management)
 
 ---
 
@@ -147,7 +147,7 @@ Network configuration and connectivity verification using NetworkManager and `nm
 - network configuration using nmcli
 - connectivity verification
 
-📁 08-linux-network-configuration
+📁 [08-linux-network-configuration](https://github.com/mstamella/linux-system-administration-labs/tree/main/08-linux-network-configuration)
 
 ---
 
