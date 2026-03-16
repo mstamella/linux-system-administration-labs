@@ -23,6 +23,21 @@ The projects in this repository simulate common enterprise Linux administration 
 
 ---
 
+## Project Index
+
+| Project | Topic | Key Skills |
+|-------|------|------|
+| [01 Enterprise Linux Server Deployment](https://github.com/mstamella/linux-system-administration-labs/tree/main/01-enterprise-linux-server-deployment) | Server installation | RHEL install, boot recovery, journald |
+| [02 Storage Management with GPT & LVM](https://github.com/mstamella/linux-system-administration-labs/tree/main/02-storage-management-lvm-gpt) | Storage administration | GPT partitioning, LVM, filesystem expansion |
+| [03 Secure Multi-User Linux Environment](https://github.com/mstamella/linux-system-administration-labs/tree/main/03-secure-multi-user-linux-environment) | User security | Users, groups, ACLs, sudo |
+| [04 Containerized Services with Podman](https://github.com/mstamella/linux-system-administration-labs/tree/main/04-containerized-services-podman) | Containers | Podman, container networking |
+| [05 Linux Automation with systemd Timers](https://github.com/mstamella/linux-system-administration-labs/tree/main/05-linux-automation-systemd-timers) | Automation | systemd services, timers |
+| [06 Flatpak Application Management](https://github.com/mstamella/linux-system-administration-labs/tree/main/06-flatpak-application-management) | Application management | Flatpak, Flathub repositories |
+| [07 RHEL Repository Management](https://github.com/mstamella/linux-system-administration-labs/tree/main/07-rhel-repository-management) | Software repositories | DNF, local ISO repos |
+| [08 Linux Network Configuration](https://github.com/mstamella/linux-system-administration-labs/tree/main/08-linux-network-configuration) | Networking | nmcli, interface configuration |
+
+---
+
 # Projects
 
 ## 1. Enterprise Linux Server Deployment
