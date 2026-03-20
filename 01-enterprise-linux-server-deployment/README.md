@@ -71,6 +71,7 @@ This lab simulates an enterprise Linux server deployment environment.
 - Booted into **emergency mode**
 - Reset lost root password
 - Verified system integrity after reboot
+- Accessed system via GRUB to initiate recovery workflow
 
 ### System Configuration
 
@@ -96,6 +97,8 @@ This lab simulates an enterprise Linux server deployment environment.
 ```bash
 mount /dev/cdrom /repo
 dnf config-manager --add-repo
+dnf repolist all
+subscription-manager status
 systemctl set-default multi-user.target
 passwd root
 journalctl -xe
@@ -107,9 +110,15 @@ journalctl -xe
 Configuration was verified using:
 
 ```bash
-systemctl get-default
-dnf repolist
-journalctl -xe
+## Validation
+
+Verified system configuration and functionality:
+
+```bash
+systemctl get-default           # Confirmed correct boot target
+dnf repolist                    # Verified repository availability
+journalctl -xe                  # Confirmed system logging functionality
+subscription-manager status     # Verified system registration
 ```
 ---
 
@@ -125,7 +134,7 @@ Successfully deployed and configured an enterprise Linux server with:
 
 ### Summary
 
-This project demonstrates core RHCSA system administration skills used in enterprise Linux environments including system recovery, repository management, and service administration.
+This project demonstrates core RHCSA system administration skills used in enterprise Linux environments including system recovery, repository management, and service administration. All configurations were tested for persistence across reboots and validated using system administration commands.
 
 ---
 
