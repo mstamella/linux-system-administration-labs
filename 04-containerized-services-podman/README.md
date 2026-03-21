@@ -55,25 +55,27 @@ This lab simulates deploying containerized services on an enterprise Linux serve
 
 ### Podman Installation
 
-- Verified Podman installation
-- Confirmed container runtime functionality
+- Verified Podman installation and container runtime functionality using `podman version`
 
 ### Image Management
 
-- Pulled container images from a container registry
+- Pulled container images from a remote container registry
 - Verified image availability
 
 ### Container Deployment
 
-- Deployed an **`nginx` web server container**
-- Configured container port mapping
-- Verified container service accessibility
+- Deployed an nginx web server container using Podman
+- Configured port mapping to expose container service on host port 8080
+- Verified containerized service accessibility via HTTP request
+- Verified container port binding and service availability on the host system
 
 ### Container Management
 
-- Started and stopped containers
-- Inspected container configuration
-- Removed unused containers and images
+- Executed container operations in a rootless environment using Podman  
+- Started and stopped containers  
+- Restarted container to verify configuration persistence  
+- Inspected container configuration  
+- Removed unused containers and images  
 
 ---
 
@@ -95,6 +97,8 @@ podman pull nginx
 podman images
 podman run -d --name webserver -p 8080:80 nginx
 podman ps
+podman inspect webserver
+ss -tulnp | grep 8080
 podman stop <container_id>
 podman rm <container_id>
 podman rmi nginx
@@ -103,23 +107,25 @@ podman rmi nginx
 
 ## Validation
 
-Configuration was verified using:
+Verified container deployment and service accessibility:
 
 ```bash
-podman ps
-podman images
-curl http://localhost:8080
+podman ps                 # Confirmed container is running
+podman images             # Verified image availability
+curl http://localhost:8080  # Confirmed web server response
 ```
 ---
 
 ## Outcome
 
-Successfully deployed a containerized web service using Podman with:
+Successfully deployed and managed a containerized web service using Podman, including image management, container lifecycle operations, and network port mapping, with service accessibility validated through HTTP testing.
 
-- container image retrieval from a registry
-- containerized `nginx` webserver deployment
-- container networking with port mapping
-- container lifecycle management using Podman commands
+Key outcomes:
+
+- Container image retrieval from a registry  
+- Containerized `nginx` web server deployment  
+- Container networking with port mapping  
+- Container lifecycle management using Podman commands  
 
 ---
 
