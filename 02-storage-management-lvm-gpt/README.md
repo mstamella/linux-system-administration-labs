@@ -27,7 +27,7 @@ This lab simulates adding new storage to a running Linux server.
 
 - 2 GB RAM
 - 20 GB primary disk
-- additional disk for storage configuration
+- Additional disk for storage configuration
 
 ---
 
@@ -61,12 +61,13 @@ This lab simulates adding new storage to a running Linux server.
 - Created **GPT partition table**
 - Added partition for LVM usage
 - Verified disk layout
+- Identified new disk using lsblk and verified device name before configuration
 
 ### LVM Configuration
 
-- Initialized **physical volume**
-- Created **volume group**
-- Created **logical volume**
+- Initialized physical volume on new disk partition
+- Created volume group to aggregate storage capacity
+- Created logical volume for application/data usage
 
 ### Filesystem Configuration
 
@@ -104,20 +105,22 @@ mkfs.xfs /dev/data_vg/data_lv
 mount /dev/data_vg/data_lv /data
 lvextend -L +2G /dev/data_vg/data_lv
 xfs_growfs /data
+cat /etc/fstab
 ```
 ---
 
 ## Validation
 
-Configuration was verified using:
+Verified storage configuration and persistence:
 
 ```bash
-lsblk
-pvs
-vgs
-lvs
-df -h
-mount
+lsblk        # Confirmed disk and partition layout
+pvs          # Verified physical volume initialization
+vgs          # Confirmed volume group configuration
+lvs          # Verified logical volume creation and size
+df -h        # Confirmed filesystem size and mount point
+mount        # Verified active mount
+cat /etc/fstab  # Confirmed persistent mount configuration
 ```
 ---
 
@@ -135,4 +138,4 @@ Successfully configured enterprise Linux storage with:
 
 ## Summary
 
-This project demonstrates enterprise Linux storage administration including disk partitioning, LVM configuration, filesystem management, and online storage expansion.
+This project demonstrates enterprise Linux storage administration including disk partitioning, LVM configuration, filesystem management, and online storage expansion. All storage configurations were validated for persistence across reboots and verified using LVM and filesystem management commands.
