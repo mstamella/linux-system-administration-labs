@@ -54,21 +54,21 @@ This lab simulates configuring network interfaces on an enterprise Linux server.
 
 ### Network Interface Inspection
 
+- Identified active network interface using nmcli before applying configuration changes
 - Listed available network interfaces
 - Verified active network connections
 - Confirmed network device status
 
 ### Network Configuration
 
-- Used **nmcli** to configure network settings
-- Verified interface configuration
-- Restarted network connections when necessary
+- Configured network interface using persistent NetworkManager connection profiles via nmcli  
+- Modified connection settings including IPv4 method, IP address, gateway, and DNS parameters  
+- Applied configuration changes by bringing the connection up using nmcli  
 
 ### Connectivity Verification
 
-- Tested network connectivity
-- Verified system network access
-- Confirmed network configuration changes
+- Verified network configuration changes were successfully applied and active  
+- Tested connectivity between hosts using ping  
 
 ---
 
@@ -87,31 +87,39 @@ This lab simulates configuring network interfaces on an enterprise Linux server.
 ```bash
 nmcli device status
 nmcli connection show
-nmcli connection up
+nmcli connection modify <connection-name> ipv4.method auto
+nmcli connection up <connection-name>
 ip addr
-ping google.com
+ping -c 2 rhcsa4
 ```
 
 ---
 
 ## Validation
 
+Verified network configuration and connectivity:
+
 ```bash
-nmcli device status
-ip addr
-ping google.com
+nmcli device status         # Confirmed active interface and connection state
+ip addr                     # Verified IP address assignment
+ping -c 2 rhcsa3            # Verified connectivity from peer host
+ping -c 2 rhcsa4            # Verified connectivity to peer host
 ```
 
 ---
 
 ## Outcome
 
-Successfully configured and verified Linux network connectivity using NetworkManager with:
+Successfully configured and validated Linux network connectivity using NetworkManager, including interface configuration, connection management, and connectivity verification, with configurations tested for persistence and reliability.
 
-- network interface inspection
-- network configuration using nmcli
-- verification of active network connections
-- successful connectivity testing
+Key outcomes:
+
+- Network interface inspection and validation  
+- Network configuration using nmcli  
+- Verification of active network connections  
+- Successful host-to-host connectivity testing  
+- Troubleshooting using system-level diagnostic commands  
+
 
 ---
 
