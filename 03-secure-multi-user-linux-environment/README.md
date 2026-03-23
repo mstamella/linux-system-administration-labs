@@ -131,7 +131,7 @@ Successfully implemented a secure multi-user Linux environment with:
 - controlled user and group management
 - secure shared directory permissions
 - extended permissions using ACLs
-- controlled administrative access using `sudoud d`d
+- controlled administrative access using `sudo`
 - verification of user access and privilege boundaries
 
 ---
